@@ -53,5 +53,5 @@ coverage.xml
 *.cover 
 
 # Random Files
-data/
+data/raw/
 .conda/
