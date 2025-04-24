@@ -10,7 +10,7 @@ A web application that recommends music based on a user's favorite songs using S
 
 ## Web Demo
 
-![[Web Demo Youtube Thumbnail](https://img.youtube.com/vi/JEWI0CfUQIg/maxres3.jpg)](https://youtu.be/JEWI0CfUQIg)
+[![Web Demo Youtube Thumbnail](https://img.youtube.com/vi/JEWI0CfUQIg/maxres3.jpg)](https://youtu.be/JEWI0CfUQIg)
 
 ## Project Structure
 
