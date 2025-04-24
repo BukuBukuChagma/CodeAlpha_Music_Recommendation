@@ -273,7 +273,7 @@ if __name__ == "__main__":
         ]
         
         # Load dataset
-        spotify_data = pd.read_csv('data/data_with_cluster_labels.csv')
+        spotify_data = pd.read_csv('data/processed/data_with_cluster_labels.csv')
         
         # Get recommendations (default method without clustering)
         print("\n--- Standard Recommendations ---")
