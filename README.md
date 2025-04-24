@@ -10,7 +10,7 @@ A web application that recommends music based on a user's favorite songs using S
 
 ## Web Demo
 
-][[Web Demo Youtube Thumbnail](https://img.youtube.com/vi/JEWI0CfUQIg/maxres3.jpg)](https://youtu.be/JEWI0CfUQIg)
+![[Web Demo Youtube Thumbnail](https://img.youtube.com/vi/JEWI0CfUQIg/maxres3.jpg)](https://youtu.be/JEWI0CfUQIg)
 
 ## Project Structure
 
@@ -63,7 +63,7 @@ A web application that recommends music based on a user's favorite songs using S
    ```
 
 4. This is an optional step
-   Train the models yourself. For this you need to download the raw dataset from ![here](https://www.kaggle.com/datasets/vatsalmavani/spotify-dataset?resource=download) and place the csv file in the data/raw/ folder. Then run the following command:
+   Train the models yourself. For this you need to download the raw dataset from [here](https://www.kaggle.com/datasets/vatsalmavani/spotify-dataset?resource=download) and place the csv file in the data/raw/ folder. Then run the following command:
    ```
    python model_training.py
    ```
