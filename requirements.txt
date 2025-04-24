@@ -7,4 +7,5 @@ scikit-learn
 scipy
 nbformat
 wordcloud
+flask
 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendation System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Music Recommendation System</h1>
+            <p>Discover new music based on your favorite songs</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <h2>Enter Your Favorite Songs</h2>
+                
+                <div class="song-inputs">
+                    <div class="song-input-row">
+                        <input type="text" placeholder="Song Name" class="song-name">
+                        <input type="number" placeholder="Year" class="song-year" min="1900" max="2025">
+                        <button class="remove-song"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+                
+                <button id="add-song" class="btn btn-add">
+                    <i class="fas fa-plus"></i> Add Another Song
+                </button>
+                
+                <div class="recommendation-type">
+                    <h3>Recommendation Type</h3>
+                    <div class="slider-container">
+                        <div class="slider">
+                            <div class="slider-option" data-value="quick">Quick</div>
+                            <div class="slider-option" data-value="advanced">Advanced</div>
+                            <div class="slider-option" data-value="both">Both</div>
+                            <div class="slider-highlight"></div>
+                        </div>
+                    </div>
+                    <p class="recommendation-description">Quick: Faster results based on song similarities</p>
+                </div>
+                
+                <button id="get-recommendations" class="btn btn-primary">Get Recommendations</button>
+            </section>
+            
+            <section class="results-section">
+                <div class="loader hidden">
+                    <div class="spinner"></div>
+                    <p>Finding the perfect songs for you...</p>
+                </div>
+                
+                <div class="recommendations hidden">
+                    <div class="quick-recommendations recommendation-column">
+                        <h2>Quick Recommendations</h2>
+                        <ul class="recommendation-list"></ul>
+                    </div>
+                    
+                    <div class="advanced-recommendations recommendation-column">
+                        <h2>Advanced Recommendations</h2>
+                        <ul class="recommendation-list"></ul>
+                    </div>
+                </div>
+                
+                <div class="error-message hidden">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p></p>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>© 2023 Music Recommendation System</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html> 
